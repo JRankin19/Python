@@ -4,6 +4,7 @@ def menu():
      print "B) Class"
      print "C) Weapon"
      option = raw_input("Choose a letter: ")
+     #while myCharDict["Name"] != "none" and myCharDict["Class"] != "none" and myCharDict["Weapon"] != "none": 
      if option == "A" or option == "a":
          optionName = raw_input("Enter name: ")
          myCharDict["Name"] = optionName
@@ -54,16 +55,16 @@ def menu():
         if optionWeapon == "Cellphone" or optionWeapon == "cellphone" or optionWeapon == "F" or optionWeapon == "f":
             myCharDict["Name"] = optionWeapon
             menu()
-        if myCharDict["Name"] <> "none" and myCharDict["Class"] <> "none" and myCharDict["Weapon"] <> "none":
-            finalizeChar()
         else:
             raw_input("Sorry, you must choose a provided weapon.: ")
+     if myCharDict["Name"] != "none" and myCharDict["Class"] != "none" and myCharDict["Weapon"] != "none":
+        finalizeChar()
 def finalizeChar():
      finalize = raw_input("Are you good with these choices?: ")
      print ("Name: %(Name)s \nClass:%(Class)s \nWeapon: %(Weapon)s" % (myCharDict))
      if finalize == "Yes" or finalize == "yes":
          print "Very well. Enjoy the adventure."
-     if finalize == "No" or finalize == "no":
+     elif finalize == "No" or finalize == "no":
          menu()
      else:
          print "You need to do SOMETHING."
