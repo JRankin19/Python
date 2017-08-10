@@ -7,7 +7,8 @@ def menu():
      #while myCharDict["Name"] != "none" and myCharDict["Class"] != "none" and myCharDict["Weapon"] != "none": 
      if option == "A" or option == "a":
          optionName = raw_input("Enter name: ")
-         myCharDict["Name"] = optionName
+         myCharDict.rename(optionName)
+         #myCharDict["Name"] = optionName
          menu()
      if option == "B" or option == "b":
         print "A) Warrior"
@@ -16,7 +17,8 @@ def menu():
         print "D) College Student"
         optionClass = raw_input("Choose a class: ")
         if optionClass == "Warrior" or optionClass == "warrior" or optionClass == "A" or optionClass == "a":
-            myCharDict["Name"] = optionClass
+            myCharDict.rename(optionClass)
+            #myCharDict["Name"] = optionClass
             menu()
         if optionClass == "Magician" or optionClass == "magician" or optionClass == "B" or optionClass == "b":
             myCharDict["Name"] = optionClass
