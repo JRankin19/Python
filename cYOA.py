@@ -70,6 +70,15 @@ def finalizeChar():
          menu()
      else:
          print "You need to do SOMETHING."
+def #name():
+    fileref = open(#"name.txt", "r")
+    for choice in fileref:
+        if choice == "A" or choice == "a":
+        if choicee == "B" or choice == "b":
+        if choie == "C" or choice == "c":
+        else:
+            print ("You must choose a letter.")
+    fileref.close()
 
 menu()
 finalizeChar()
