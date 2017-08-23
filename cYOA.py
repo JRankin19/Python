@@ -78,6 +78,8 @@ def #name():
         if choie == "C" or choice == "c":
         else:
             print ("You must choose a letter.")
+    partOne = fileref.readlines()
+    partTwo = fileref.readlines()
     fileref.close()
 
 menu()
